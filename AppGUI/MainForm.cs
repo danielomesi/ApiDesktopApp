@@ -30,27 +30,32 @@ namespace AppGUI
 
         private void comboBoxFlightHolder_SelectedIndexChanged(object sender, EventArgs e)
         {
-            labelParam.Text = (sender as ComboBox).SelectedItem.ToString();
-            labelParam.Visible = true;
-            if (labelParam.Text == "Airport")
+            ComboBox comboBox = sender as ComboBox;
+            if(comboBox.SelectedItem!=null)
             {
-                textBoxSearchParam.Visible = false;
-                labelWhichFlights.Visible = true;
-                comboBoxWhichFlights.Visible = true;
-                if (m_Airports==null)
+                labelParam.Text = comboBox.SelectedItem.ToString();
+                labelParam.Visible = true;
+                if (labelParam.Text == "Airport")
                 {
-                    m_Airports=ServerAPI.GetAirportsDictionary();
+                    textBoxSearchParam.Visible = false;
+                    labelWhichFlights.Visible = true;
+                    comboBoxWhichFlights.Visible = true;
+                    if (m_Airports == null)
+                    {
+                        m_Airports = ServerAPI.GetAirportsDictionary();
+                    }
+                    updateComboBoxItems();
+                    comboBoxAirport.Visible = true;
                 }
-                updateComboBoxItems();
-                comboBoxAirport.Visible = true;
+                else
+                {
+                    comboBoxAirport.Visible = false;
+                    textBoxSearchParam.Visible = true;
+                    labelWhichFlights.Visible = false;
+                    comboBoxWhichFlights.Visible = false;
+                }
             }
-            else
-            {
-                comboBoxAirport.Visible = false;
-                textBoxSearchParam.Visible = true;
-                labelWhichFlights.Visible = false;
-                comboBoxWhichFlights.Visible = false;
-            }
+            
         }
 
         private void updateComboBoxItems()
