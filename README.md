@@ -19,8 +19,9 @@ https://openskynetwork.github.io/opensky-api/rest.html
 2. Choose from the airports list or write an aircraft in icao24 format
 
 Airport
--Please note that some airports suggested are not actually available to search,
+-Please note that some suggested airports are not actually available to search,
 try looking for known airports worldwide.
+
 ![App Screenshot](./Images/airports_list.jpg)
 
 Aircraft
