@@ -14,7 +14,7 @@ https://openskynetwork.github.io/opensky-api/rest.html
 
 1. Choose search criteria (Airport/Aircraft)
 
-![App Screenshot](https://imgtr.ee/images/2023/07/15/404b77d2b2b01b4a07f6362cfc7ef50b.jpeg)
+![App Screenshot](blob:https://drive.internxt.com/dcad2b0a-09eb-4fad-9b71-795f9d16111d)
 
 2. Choose from the airports list or write an aircraft in icao24 format
 
