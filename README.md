@@ -19,14 +19,16 @@ https://openskynetwork.github.io/opensky-api/rest.html
 2. Choose from the airports list or write an aircraft in icao24 format
 
 Airport
-
-![App Screenshot](https://imgtr.ee/images/2023/07/15/418e89a51bc520ebc1727086759c7b55.jpeg)
+-Please note that some airports suggested are not actually available to search,
+try looking for known airports worldwide.
+![App Screenshot](./Images/airports list.jpg)
 
 Aircraft
-![App Screenshot](https://imgtr.ee/images/2023/07/15/e6cfc0a218ae0f337c094b784a783636.jpeg)
+There is a need to enter the icao24 code of an aircraft.
+Examples: 3c675a, 4c808e, 73806a
 
 3. Fill in the date range
 
 4. Click on "Fetch Data" and all Flights will be shown (if found)
 
-![App Screenshot](https://imgtr.ee/images/2023/07/15/b480d687c132a0b9bcf7b9b8a1c90211.jpeg)
+![App Screenshot](./Images/flights data.jpg)
